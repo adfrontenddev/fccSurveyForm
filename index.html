@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap" rel="stylesheet" />
+      <link rel="stylesheet" href="survey-form.css" />
+      <title>Survey Form</title>
+   </head>
+   <body>
+      <div class="container">
+         <header class="survey-header">
+            <h1 id="title">Vacation Destination Survey</h1>
+            <p id="description">What are your favorite vacation destinations?</p>
+         </header>
+         <main class="form-container">
+            <form action="#" method="post" id="survey-form">
+               <div class="input-section">
+                  <label id="name-label" for="name">Name</label>
+                  <input type="text" id="name" placeholder="Full Name" required />
+               </div>
+               <div class="input-section">
+                  <label id="email-label" for="email">Email</label>
+                  <input type="email" id="email" placeholder="email@address.com" required />
+               </div>
+               <div class="input-section">
+                  <label for="number">Number of travelers</label>
+                  <input type="number" id="number" placeholder="1" min="1" max="10" />
+               </div>
+               <div class="input-section">
+                  <label id="number-label" for="number">When do you prefer to travel</label>
+                  <select name="" id="dropdown">
+                     <option value="spring">Spring</option>
+                     <option value="summer">Summer</option>
+                     <option value="winter">Winter</option>
+                     <option value="fall">Fall</option>
+                  </select>
+               </div>
+               <p class="form-question">How important is the choice of possible activities when choosing a vacation destination?</p>
+               <div class="select-section">
+                  <input type="radio" name="activity-importance" id="activity-importance1" value="extremely-important" />
+                  <label for="activity-importance">Extremely Important</label>
+               </div>
+               <div class="select-section">
+                  <input type="radio" name="activity-importance" id="activity-importance2" value="very-important" />
+                  <label for="activity-importance">Very Important</label>
+               </div>
+               <div class="select-section">
+                  <input type="radio" name="activity-importance" id="activity-importance3" value="slightly-important" />
+                  <label for="activity-importance">Slightly Important</label>
+               </div>
+               <p class="form-question">What are some of your interests. Check all that apply.</p>
+               <div class="select-section">
+                  <input type="checkbox" name="interest" id="interest1" value="foodie" />
+                  <label for="activity-importance">Restaurants for Foodies</label>
+               </div>
+               <div class="select-section">
+                  <input type="checkbox" name="interest" id="interest2" value="museum" />
+                  <label for="activity-importance">Museums</label>
+               </div>
+               <div class="select-section">
+                  <input type="checkbox" name="interest" id="interest3" value="clubs" />
+                  <label for="activity-importance">Night Clubs</label>
+               </div>
+               <div class="select-section">
+                  <input type="checkbox" name="interest" id="interest4" value="parks-gardens" />
+                  <label for="activity-importance">Parks & Gardens</label>
+               </div>
+               <div class="select-section">
+                  <input type="checkbox" name="interest" id="interest5" value="hiking" />
+                  <label for="activity-importance">Hiking</label>
+               </div>
+               <div class="select-section">
+                  <input type="checkbox" name="interest" id="interest6" value="galleries" />
+                  <label for="activity-importance">Art Galleries</label>
+               </div>
+               <p class="form-question">What would be your dream destination?</p>
+               <div class="select-section">
+                  <textarea name="dream-destination" id="comment"></textarea>
+               </div>
+               <div class="submit-section">
+                  <input type="submit" id="submit" value="Submit" />
+               </div>
+            </form>
+         </main>
+      </div>
+      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+   </body>
+</html>
